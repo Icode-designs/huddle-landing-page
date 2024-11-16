@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Poppins", "Open Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+/* ---------Header styles--------------- */
+
+.header {
+  background-image: url(images/bg-hero-desktop.svg);
+  height: fit-content;
+  background-repeat: no-repeat;
+  padding: 3rem;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+.nav__try-btn {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 1.3rem 4.3rem;
+  border-radius: 100px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 6rem;
+  padding: 2rem 2rem;
+}
+
+.content__article {
+  max-width: 45vw;
+  flex: 1;
+}
+
+.header__img-container {
+  max-width: 45vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.article__heading {
+  font-size: 4rem;
+  line-height: 6rem;
+  margin-bottom: 4rem;
+}
+
+.article__body {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.article__try-btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: hsl(322, 100%, 66%);
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+@media (min-height: 800px) {
+  .header {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+
+  .nav__logo {
+    height: 4.2rem;
+  }
+
+  .nav__try-btn {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  html {
+    font-size: 6px;
+  }
+  .nav__logo {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .nav__try-btn {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 5px;
+  }
+  .nav {
+    padding-left: 0;
+  }
+  .nav__logo {
+    height: 3rem;
+    margin-left: 0;
+  }
+
+  .nav__try-btn {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    background-image: url(images/bg-hero-mobile.svg);
+    padding: 2rem;
+  }
+
+  .header__content {
+    flex-direction: column;
+  }
+
+  .content__article {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .header__img-container {
+    max-width: 100%;
+  }
+}
