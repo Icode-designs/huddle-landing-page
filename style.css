@@ -60,6 +60,7 @@ nav button {
   border: none;
   background-color: white;
   border-radius: 100px;
+  cursor: pointer;
 }
 
 /* ============== nav media queries */
@@ -88,6 +89,7 @@ nav button {
   padding-top: 0;
   align-items: center;
   gap: 5%;
+  cursor: default;
 }
 
 .header__content > * {
@@ -114,6 +116,7 @@ nav button {
   padding: var(--prmary-button-padding);
   background-color: var(--primary-pink);
   border-radius: 100px;
+  cursor: pointer;
 }
 
 .header__image-holder img {
@@ -176,6 +179,7 @@ nav button {
 .contents {
   font-size: 14px;
   padding: var(--primary-padding);
+  cursor: default;
 }
 
 .content {
@@ -281,6 +285,7 @@ nav button {
   text-align: center;
   transform: translateY(50px);
   z-index: 2;
+  cursor: default;
 }
 
 .get-started button {
@@ -292,6 +297,7 @@ nav button {
   color: var(--white-text);
   border-radius: 100px;
   margin-top: 2em;
+  cursor: pointer;
 }
 
 /* ===============get-started media queries============== */
@@ -311,6 +317,7 @@ footer {
   padding-top: 8em;
   color: var(--white-text);
   z-index: 1;
+  cursor: default;
 }
 
 .footer__content {
